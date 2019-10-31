@@ -3,7 +3,7 @@
 capture program drop sbmeff
 program define sbmeff, rclass
     version 16
-	qui mata mata mlib index
+	
     if strpos(`"`0'"',":")==0{  // Tone(2001) SBM without undesriable outputs
 	   sbmeffnu `0'
 	   exit
@@ -126,6 +126,7 @@ program define sbmeff, rclass
 	  local sup "sup"
 	}
 	*/
+	qui mata mata mlib index
 	mata: sbmu(`"`invars'"',`"`gopvars'"',`"`bopvars'"',"`dmu2'","`tvar'",`rstype',"`techflag'","TE",`"`slackvars'"',`maxiter',`tol')
 	
 	
@@ -250,6 +251,7 @@ program define sbmeffnu, rclass
 	  local sup "sup"
 	}
 	*/
+	qui mata mata mlib index
 	mata: sbm(`"`invars'"',`"`opvars'"',"`dmu2'","`tvar'",`rstype',"`techflag'","TE",`"`slackvars'"', `maxiter',`tol')
 	
 	
