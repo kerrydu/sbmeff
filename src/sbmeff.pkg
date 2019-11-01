@@ -1,0 +1,8 @@
+v 1.0
+d 'SBMEFF': Slacks-based Measure of Efficiency in Stata
+d 
+d Distribution-Date:   20191031
+d 
+F lsbmeff.mlib
+F sbmeff.ado
+F sbmeff.sthlp
