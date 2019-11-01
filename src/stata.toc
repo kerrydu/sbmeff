@@ -1,6 +1,0 @@
-v 1.0
-d Materials by Kerry Du
-d Xiamen University
-d kerrydu@xmu.edu.cn
-
-p sbmeff
