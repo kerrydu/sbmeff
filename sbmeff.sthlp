@@ -51,14 +51,15 @@
 {cmd:sbmeff} selects the input and output variables from the user designated data file or in the opened data set and solves Slacks-based Measure of Efficiency models by options specified. 
 
 {phang}
-The sbmeff program uses the buit-in mata function linearprogram(). Stata 16 or later is required.
-
-{phang}
 The sbmeff program requires initial data set that contains the input and output variables for observed units. 
 
 {phang}
 Variable names must be identified by inputvars for input variable, by desirable_outputvars for desirable output variable,  and by undesirable_outputvars for undesirable output variable
  to allow that {cmd:sbmeff} program can identify and handle the multiple input-output data set.
+ 
+{phang}
+Stata 16 or later is required.
+
 
 
 
