@@ -107,6 +107,4 @@ Xiamen University
 {psee}
 Xiamen, China
 
-{psee}
-E-mail: kerrydu@xmu.edu.cn
 {p_end}
