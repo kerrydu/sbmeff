@@ -1,5 +1,7 @@
 # sbmeff
  Slacks-based Measure of Efficiency in Stata
+
+##  **To be aware**: sbmeff has been incorprated in gtfpch( [[github]](https://github.com/kerrydu/gtfpch) [[gitee]](https://gitee.com/kerrydu/gtfpch)). Thus, this repository would not be updated.
  
 ## Installing within Stata
 
