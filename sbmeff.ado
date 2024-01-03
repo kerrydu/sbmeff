@@ -339,7 +339,7 @@ mata clear
 		}
 		q.setCoefficients(c)
 		q.setBounds(lowerbd, upperbd)
-		 beq=1 \ J(nx+ny+nb,1,0) \ 1
+		 beq=1 \ J(nx+ny+nb,1,0) \ 0
 		 Aeq1=1,J(1,nx,0),1:/((ny+nb)*Y),1:/((ny+nb)*B),J(1,rows(Xref),0)
 		 Aeq2=-X',I(nx),J(nx,ny+nb,0),Xref'
 		 Aeq3=-Y',J(ny,nx,0),-I(ny),J(ny,nb,0),Yref'		 
@@ -506,7 +506,7 @@ mata clear
 		}		
 		q.setCoefficients(c)
 		q.setBounds(lowerbd, upperbd)
-		 beq=1 \ J(nx+ny,1,0) \ 1
+		 beq=1 \ J(nx+ny,1,0) \ 0
 		 Aeq1=1,J(1,nx,0),1:/(ny*Y),J(1,rows(Xref),0)
 		 Aeq2=-X',I(nx),J(nx,ny,0),Xref'
 		 Aeq3=-Y',J(ny,nx,0),-I(ny),Yref'		 
