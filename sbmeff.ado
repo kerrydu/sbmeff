@@ -344,7 +344,7 @@ mata clear
 		 Aeq2=-X',I(nx),J(nx,ny+nb,0),Xref'
 		 Aeq3=-Y',J(ny,nx,0),-I(ny),J(ny,nb,0),Yref'		 
 		 Aeq4=-B',J(nb,nx+ny,0),I(nb),Bref'
-		 Aeq5=J(1,1+nx+ny+nb,0),J(1,rows(Xref),1)
+		 Aeq5=-1,J(1,nx+ny+nb,0),J(1,rows(Xref),1)
 		 q.setEquality(Aeq1 \ Aeq2 \ Aeq3 \ Aeq4 \Aeq5, beq)
 	     q.setMaxOrMin("min")
 		 beta=q.optimize()
@@ -510,7 +510,7 @@ mata clear
 		 Aeq1=1,J(1,nx,0),1:/(ny*Y),J(1,rows(Xref),0)
 		 Aeq2=-X',I(nx),J(nx,ny,0),Xref'
 		 Aeq3=-Y',J(ny,nx,0),-I(ny),Yref'		 
-		 Aeq4=J(1,1+nx+ny,0),J(1,rows(Xref),1)
+		 Aeq4=-1,J(1,nx+ny,0),J(1,rows(Xref),1)
 		 q.setEquality(Aeq1 \ Aeq2 \ Aeq3 \ Aeq4, beq)
 	     q.setMaxOrMin("min")
 		 beta=q.optimize()
